@@ -1,0 +1,8 @@
+{
+  "name": "Courtney & Jaime",
+  "description": "Courtney and Jaime's wedding website",
+  "repository": "https://github.com/heroku/courtneyandjaime",
+  "logo": "http://courtneyandjaime.herokuapp.com/images/heart-icon.png",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
