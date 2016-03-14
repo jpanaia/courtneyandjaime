@@ -1,7 +1,7 @@
 {
   "name": "courtneyandjaime",
   "version": "0.1.5",
-  "description": "Courtney & Jaime's Wedding",
+  "description": "Courtney and Jaime's Wedding",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
