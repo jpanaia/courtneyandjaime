@@ -2889,7 +2889,7 @@ h2#dont-miss-it-title{
 	padding: 140px 0
 }
 
-#events-carousel .item{
+#events-carousel .item, #events-carousel2, #events-carousel3{
 	padding:20px;
 	margin-bottom:10px;
 }
