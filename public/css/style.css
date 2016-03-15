@@ -303,6 +303,13 @@ img.with-border{
 	border:1px solid #6a6a6a;
 }
 
+.linky {
+	color: #f0394d!important;
+}
+
+.linky:hover {
+	text-decoration: underline!important;
+}
 
 /*===============================================*/
 /* 02. NAV BAR  	 							 */
@@ -2889,7 +2896,7 @@ h2#dont-miss-it-title{
 	padding: 140px 0
 }
 
-#events-carousel .item, #events-carousel2, #events-carousel3{
+#events-carousel .item, #events-carousel2, #events-carousel{
 	padding:20px;
 	margin-bottom:10px;
 }
