@@ -383,8 +383,8 @@ $(document).ready(function() {
  	
 	// 10.2 OWL CAROUSEL - MORE EVENTS (ONEPAGE)
 	//------------------------------------------------------------------------------
-	if ($("#events-carousel").length){		
-    	$("#events-carousel").owlCarousel({
+	if ($("[id^=events-carousel]").length){		
+    	$("[id^=events-carousel]").owlCarousel({
 			items : 2,
 			itemsDesktopSmall: [979,2], 
 			autoPlay: 2000,
@@ -394,10 +394,11 @@ $(document).ready(function() {
 		});		
 		
 		if (device.tablet() || device.mobile()) {
-			var owl_events = $("#events-carousel").data('owlCarousel');
+			var owl_events = $("id^=events-carousel]").data('owlCarousel');
 			owl_events.stop()
 		}	
 	}
+
  	
 	// 10.3 OWL CAROUSEL - REGISTRY LOGO (ONEPAGE)
 	//------------------------------------------------------------------------------

@@ -14,13 +14,14 @@
 		//DEFINE MAP OPTIONS
 		//=======================================================================================
   		var mapOptions = {
-    		zoom: 7,		
-			mapTypeId: google.maps.MapTypeId.ROADMAP,	
+        scrollwheel: false,
+    		zoom: 8,		
+			  mapTypeId: google.maps.MapTypeId.ROADMAP,	
     		center: new google.maps.LatLng(45.5627769,-121.5655227),
-			panControl: true,
+			  panControl: true,
   			zoomControl: true,
   			mapTypeControl: true,
-  			//scaleControl: false,
+  			scaleControl: false,
   			streetViewControl: true,
   			overviewMapControl: true,
 			//rotateControl:true,
@@ -134,9 +135,9 @@
 		
 		//INFO WINDOWS
 		//=======================================================================================
-		var contentString = '<div>'+
-		'WEDDING CEREMONY AND RECEPTION';
-      	'</div>';
+		var contentString = 
+		"<b>ROBIN'\nS NEST CABIN</b>" + '<br/><span style="font-size:12px">5680 Oregon Rd, Mt. Hood - Parkdale, OR 97041</span>' ;
+      	//'</div>';
 		
 		var contentString1 = '<div>'+
 		'WEDDING PARTY';
