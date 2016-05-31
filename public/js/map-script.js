@@ -54,16 +54,24 @@
 		
 		//ADD NEW MARKER WITH LABEL
 		//=======================================================================================
-		var marker1 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(45.5627769,-121.5655227),
-       		draggable: false,
-       		raiseOnDrag: false,
-       		icon: ' ',
-       		map: map, 
-         	labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
-       		labelAnchor: new google.maps.Point(29, 20),
-       		labelClass: "labels" // the CSS class for the label
-     		});
+
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(45.562957, -121.563313),
+      map: map,
+      draggable: false,
+      animation: google.maps.Animation.DROP,
+    });
+
+		// var marker1 = new MarkerWithLabel({
+  //      		position: new google.maps.LatLng(45.5627769,-121.5655227),
+  //      		draggable: false,
+  //      		raiseOnDrag: false,
+  //      		icon: ' ',
+  //      		map: map, 
+  //        	labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
+  //      		labelAnchor: new google.maps.Point(29, 20),
+  //      		labelClass: "labels" // the CSS class for the label
+  //    		});
     
 		// var marker2 = new MarkerWithLabel({
   //      		position: new google.maps.LatLng(-12.046040, -77.029269),
@@ -155,12 +163,12 @@
 		
 		//OPEN INFO WINDOWS ON LOAD
 		//=======================================================================================
-  		infowindow.open(map,marker1);
+  		infowindow.open(map,marker);
 		
 		//ON CLICK MARKER, OPEN INFO WINDOWS
 		//=======================================================================================
-		google.maps.event.addListener(marker1, 'click', function() {
-  			infowindow.open(map,marker1);
+		google.maps.event.addListener(marker, 'click', function() {
+  			infowindow.open(map,marker);
   		});
 
 		//ON MARKER CLICK EVENTS
@@ -190,7 +198,7 @@
 			{
 				//map.setCenter(marker.getPosition());
 				window.setTimeout(function() {
-      				map.panTo(marker1.getPosition());
+      				map.panTo(marker.getPosition());
     			}, 500);
 			}
 			is_windowresize=false;
